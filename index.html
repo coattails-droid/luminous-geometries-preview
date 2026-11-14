@@ -54,6 +54,12 @@
               color:var(--accent);text-decoration:none;font-size:13px;letter-spacing:.08em;}
   .card a.live:hover{background:var(--btn-bg);color:var(--btn-ink);border-color:var(--btn-bg);}
   footer{text-align:center;padding:0 24px 48px;color:var(--muted);font-size:13px;letter-spacing:.1em;}
+  /* ---------- motion & build notes ---------- */
+  .notes{max-width:1100px;margin:0 auto 64px;padding:0 24px;}
+  .notes h2{font-family:var(--font-display);font-size:22px;color:var(--title);letter-spacing:.5px;margin:0 0 6px;}
+  .notes h3{font-size:17px;color:var(--title);margin:28px 0 8px;}
+  .notes p{line-height:1.7;color:var(--ink);max-width:640px;margin:0 0 12px;}
+  .notes .rule{border:none;border-top:1px solid var(--line);margin:0 0 26px;}
   /* ---------- theme toggle (guide v1.1) ---------- */
   .topbar{display:flex;justify-content:flex-end;padding:0 0 18px;}
   .theme-toggle{display:inline-flex;border:1.5px solid var(--line-dark);border-radius:999px;
@@ -88,7 +94,7 @@
   <h1>LUMINOUS GEOMETRIES</h1>
   <p class="series">SERIES 4 &middot; CALVIN FOUGHT (COATTAILS)</p>
   <p class="desc">Luminous Geometries grows volumetric fields from a single hash. Each token spins its own constellation — 48 accent dots webbed in thread around the core — in a seamless loop. Five palettes, weighted: Sunlight 40%, Moonlight 15%, Midnight 15%, Solar Eclipse 15%, Lunar Eclipse 15%. Motion trait: wave star 50% / spiral 50%. Dots: sparse / standard / dense. Fully on-chain: the renderer, the geometry, and the metadata all live on Ethereum — no servers, no IPFS, nothing to disappear.</p>
-  <p class="brief"><a href="briefing.html">Motion &amp; build notes &rarr;</a></p>
+  <p class="brief"><a href="#notes">Motion &amp; build notes &darr;</a></p>
 </header>
 <div class="grid">
   <div class="card"><img src="stills/token-0-1080.png?v=227" alt="Luminous Geometries #0"><div class="meta"><span class="t">#0</span><span class="p">Sunlight</span></div><div class="traits">star · sparse</div><a class="live" href="tokens/token-0.html">View live</a></div>
@@ -102,6 +108,29 @@
   <div class="card"><img src="stills/token-8-1080.png?v=227" alt="Luminous Geometries #8"><div class="meta"><span class="t">#8</span><span class="p">Solar Eclipse</span></div><div class="traits">star · dense</div><a class="live" href="tokens/token-8.html">View live</a></div>
   <div class="card"><img src="stills/token-9-1080.png?v=227" alt="Luminous Geometries #9"><div class="meta"><span class="t">#9</span><span class="p">Lunar Eclipse</span></div><div class="traits">spiral · standard</div><a class="live" href="tokens/token-9.html">View live</a></div>
 </div>
+<section class="notes" id="notes">
+  <hr class="rule">
+  <h2>MOTION &amp; BUILD NOTES</h2>
+<h3>From Tidal to Luminous</h3>
+<p>Luminous Geometries grew out of the Tidal Geometries engine — the same volumetric field renderer, rebuilt from a fresh genesis hash with a new triangle dot grid. Where Tidal mapped orbital ring-lattices across a plane, Luminous turns inward: a central heart-light wrapped in Fibonacci shells, webbed with accent points in thread.</p>
+
+<h3>The Motion Choreography</h3>
+<p>Every token runs a seamless 227-second loop. The camera is locked — a forward-only 360° orbit at 5.625° elevation and 2.2× zoom. No cuts, no reversals. One continuous revolution.</p>
+<p><strong>Star</strong> is the steady state. The form holds its breath — shells at full brightness, webbing at rest, the heart-light burning at 100%.</p>
+<p><strong>Spiral</strong> sweeps brightness through the form in rotating arms. The geometry stays locked at the same radius as Star — only light moves.</p>
+<p><strong>Form</strong> folds the shells out or in at the loop's breath points. A slow inhale, exhale across the full 227 seconds.</p>
+
+<h3>The Traits</h3>
+<p>Four public traits, all driven by the token's hash:</p>
+<p><strong>Palette</strong> — Sunlight 40%, Moonlight 15%, Midnight 15%, Solar Eclipse 15%, Lunar Eclipse 15%<br>
+<strong>Wave</strong> — Star 50%, Spiral 50%<br>
+<strong>Points</strong> — Sparse, Standard, or Dense accent dot counts<br>
+<strong>Form</strong> — folding out or folding in</p>
+<p>Beneath the traits, every token gets its own constellation: hash-seeded dot positions, dual foci, and ring radii. No two are alike.</p>
+
+<h3>Fully On-Chain</h3>
+<p>The renderer, the geometry derivation, and the metadata all live on Ethereum. Each token's seed generates its unique form at render time — no servers, no IPFS, nothing to disappear.</p>
+</section>
 <footer>LUMINOUS GEOMETRIES &middot; PREVIEW GALLERY &middot; BY CALVIN FOUGHT (COATTAILS)</footer>
 <script>
   /* Theme toggle wiring (guide v1.1): sync pressed state, save the choice. */
